@@ -1,2 +1,3 @@
-# progra-3
-Curso de programación.
+# Programación III
+
+Repositorio del curso de programación III.
