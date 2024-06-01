@@ -4,7 +4,7 @@ $frutas = array('manzana', 'naranja', 'uva');
 
 // Acceso a elementos por índice
 echo $frutas[0];  // manzana
-echo $frutas[1];  // plátano
+echo $frutas[1];  // naranja
 echo $frutas[2];  // uva
 ?>
 

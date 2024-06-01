@@ -14,5 +14,7 @@ $c = 'juan@example.com';
 
 $fechaISO = '2023-01-23';
 
+echo $nombreCompleto;
+
 
 ?>

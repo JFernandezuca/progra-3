@@ -5,6 +5,8 @@
 $numero = 7;
 
 // Operador ternario para determinar si es par o impar
+
+
 $resultado = ($numero % 2 == 0) ? "Par" : "Impar";
 
 // Mostrar el resultado

@@ -30,6 +30,10 @@
 		echo "Número es diferente de cero";
 	}elseif($numero > 0){
 		echo "Número es mayor a cero";
+	}
+	elseif($numero > 2){
+			echo "Número es mayor a cero";
+		
 	}else{
 		echo "Número es menor a cero";
 	}
@@ -41,6 +45,8 @@
 		echo "Número es diferente de cero";
 	}
     
+
+
     if($numero > 0){
 		echo "Número es mayor a cero";
 	}else{

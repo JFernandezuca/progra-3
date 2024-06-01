@@ -8,7 +8,8 @@
 
     <?php
 
-$_POST['nombre'];
+        var_dump($_POST);
+#$_POST['nombre'];
     // Verificar si se envió el formulario
     if (isset($_POST["enviar-informacion"])) {
         // Obtener el nombre enviado desde el formulario
@@ -22,6 +23,9 @@ $_POST['nombre'];
     <form method="post" action="#">
         <label for="nombre">Ingresa tu nombre:</label>
         <input type="text" name="nombre" required>
+
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" name="apellido" required>
 
         <button type="submit" name="enviar-informacion">Saludar</button>
     </form>

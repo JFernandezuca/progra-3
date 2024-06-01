@@ -1,6 +1,12 @@
 <?php
 
 // Variables de texto (string)
+
+
+$nombre = "Jairo";
+
+
+$nombre = "";
 $nombre = "Juan";
 echo  "Hola, $nombre!";
 

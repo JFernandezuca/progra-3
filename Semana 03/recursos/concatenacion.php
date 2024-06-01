@@ -3,7 +3,7 @@
 // Concatenación de cadenas
 $nombre = "Juan";
 
-echo "Nombre: " . $nombre_completo . "<br>";
+echo "Nombre: " . $nombre_completo .  "Prueba"  . "<br>";
 
 // Concatenación en la impresión de texto
 $edad = 30;
