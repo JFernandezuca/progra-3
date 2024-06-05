@@ -8,6 +8,7 @@
 2. arregloCount.php
 3. accederMultiArray.php
 4. foreach-arreglo.php
+5. imprimir-en-tabla.php
 
 ## Carpeta archivos
 
