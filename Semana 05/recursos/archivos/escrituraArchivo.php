@@ -26,8 +26,8 @@
             $contenido = $_POST['codigo']. "/". $_POST['nombre-universidad'];
 
 
-            $archivoDirectorio = "directorio.txt";
-            $file = fopen($archivoDirectorio, "a"); // la a significa append o sea adjuntar.
+        
+            $file = fopen("directorio.txt", "a"); // la a significa append o sea adjuntar.
             $registro = $contenido.PHP_EOL;
             fwrite($file, $registro);
             fclose($file);

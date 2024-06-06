@@ -1,3 +1,2 @@
- 1/TEC
-2/UCR
-3/UCA
+2/uam
+3/uned

@@ -8,6 +8,7 @@
 
     <?php
 
+//                    0 1  2  3  4   5    6     7
     $arreglo = array(7, 9, 3, 1, 2, "A", "LU", "EL");
 
     // Obtener la longitud del arreglo

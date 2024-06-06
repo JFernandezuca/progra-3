@@ -24,6 +24,8 @@ $datos_contacto = [
             </tr>
         </thead>
         <tbody>
+
+        
             <?php foreach ($datos_contacto as $contacto) : ?>
                 <tr>
                     <td><?= $contacto[0] ?></td>
@@ -31,6 +33,9 @@ $datos_contacto = [
                     <td><?= $contacto[2] ?></td>
                 </tr>
             <?php endforeach; ?>
+
+
+
         </tbody>
     </table>
 </body>
