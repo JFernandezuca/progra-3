@@ -13,3 +13,4 @@ class Carro {
 
 // Crear una nueva instancia de la clase Carro
 $miCarro = new Carro("Toyota", "Corolla");
+$miCarro2 = new Carro("suzuki", "alto");

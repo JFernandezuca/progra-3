@@ -14,6 +14,12 @@ class Figura {
     }
 }
 
+
+class Cuadrado extends Figura {
+
+}
+
+
 // Definición de la clase #2  derivada Rectangulo
 // Uso de extends 
 class Rectangulo extends Figura {
@@ -30,4 +36,10 @@ echo "Área del rectángulo: " . $rectangulo->calcularArea() . "<br>";
 
 // Este metodo esta propiamente en la case rectangulo
 echo "Perímetro del rectángulo: " . $rectangulo->calcularPerimetro();
+
+$cuadrado = new Cuadrado(50,10);
+echo "Área del cuadrado: " . $cuadrado->calcularArea() . "<br>";
+
+
+
 ?>
