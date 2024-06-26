@@ -1,0 +1,13 @@
+1 Crear una clase.
+    1.1 4 atributos:
+        marca.
+        modelo.
+        annoFabricacion.
+        color
+
+
+2 Crear 2 objetos con propieades normales.
+3 Dejar propiedad anno en blanco.
+    Imprimir con var_dump
+    
+4 Usar un constructor para hacer obligatorio el uso de los atributos.
