@@ -38,12 +38,15 @@
         //consultar a base de datos / consulta el archivo
         $usuario_quemado = 'usuario';
         $password_quemado = '123';
+
+
+
         if($usuario == $usuario_quemado && $password == $password_quemado){
             session_start();
             $_SESSION["USUARIO"] = $usuario;
             $_SESSION["PASSWORD"] = $password;
-            $_SESSION["PERFIL"] = 1; //Administrador
-            //$_SESSION["PERFIL"] = 2; //Usuario
+            //$_SESSION["PERFIL"] = 1; //Administrador
+            $_SESSION["PERFIL"] = 2; //Usuario
             echo "usuario valido... redireccionando";
             echo "<script>setTimeout(\"location.href='panel.php'\")</script>";
         }else{

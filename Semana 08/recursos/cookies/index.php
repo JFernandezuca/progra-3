@@ -15,6 +15,9 @@
     </form>
     <?php
     if(isset($_POST["procesar"])){
+
+
+        
         if(!isset($_COOKIE["COOKIE_NOMBRE"])){
             setcookie('COOKIE_NOMBRE', $_POST["txt_nombre"], time() + 12000); // Se cambió mktime() por time()
         } else {

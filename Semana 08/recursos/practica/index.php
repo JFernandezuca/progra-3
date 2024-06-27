@@ -14,17 +14,23 @@
     </form>
 
     <?php
+
     if(isset($_POST["btn-sumar"])){
+
+        include_once("SumCalculator.php");
+        $num1 = $_POST["number1"];
+        $num2 = $_POST["number2"];
+
        
-      include_once("sumCalculator.php");
-       $num1 = $_POST["number1"];
-       $num2 = $_POST["number2"];
-
-       $sumCalulator = new SumCalculator($num1, $num2);
-        $resultado = $sumCalulator->getSum();
-
+        $sumCalculator = new SumCalculator($num1, $num2);
+        $resultado = $sumCalculator->getSum();
         echo $resultado;
+
+
+
+
     }
-    ?>
-</body>
+?>
+
+    </body>
 </html>

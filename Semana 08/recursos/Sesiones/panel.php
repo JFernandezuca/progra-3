@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo "Hola, " . $_SESSION["USUARIO"] . "!";
+echo "Hola, " . $_SESSION["USUARIO"] . "! <br>";
 //var_dump($_SESSION);
 if($_SESSION["PERFIL"] == 1){
     echo "Mostrar menú de administrador perfil 1";
