@@ -1,0 +1,21 @@
+# Crear carpeta proyecto con la siguiente estructura:
+1- controllers
+2- models
+3- views
+
+# crear index.php  en raiz del proyecto(de momento vacia).
+
+1- Crear archivo cuadrado.php en models.
+2- Crear clase para ese modelo.
+
+3- Crear archivo cuadrado.php en views.
+4- Crear html.
+
+5- Crear en controllers un archivo llamado cuadrado.php
+6- Agregar logica para obtener el cuadrado.
+
+7- Probar el ejemplo.
+
+
+
+

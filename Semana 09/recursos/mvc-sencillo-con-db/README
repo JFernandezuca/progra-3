@@ -1,0 +1,9 @@
+1 Crear base de datos llamada HR.
+ -- Crear datos en mysql
+
+
+--- SELECT * FROM users WHERE NUM_IDENTIFICACION = '1234567890' AND DSC_PASSWORD = '123';
+
+
+2 Crear usuarios: create-tabla-users.sql
+
