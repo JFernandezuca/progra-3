@@ -5,9 +5,11 @@ require_once("models/cuadrado.php");
 
 if(isset($_POST["btn_calcular_cuadrado"])){
 
-    $cuadrado = new cuadrado();
+    
     $largo = $_POST["largo"];
     $ancho = $_POST["ancho"];
+
+    $cuadrado = new cuadrado();
 
     //validaciones
     //seteo de valores

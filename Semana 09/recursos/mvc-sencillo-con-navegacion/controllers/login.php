@@ -10,8 +10,8 @@ if(isset($_POST["btn_ingresar"])){
     $login = new login();
     $login->setUsuario($_POST["txt_usuario"]);
     $login->setContrasena($_POST["txt_password"]);
-    echo $_POST["txt_usuario"];
-    echo $login->getUsuario();
+    //echo $_POST["txt_usuario"];
+    //echo $login->getUsuario();
 
 
     if(empty($login->getUsuario())){
@@ -31,5 +31,5 @@ if(isset($_POST["btn_ingresar"])){
 
 }
 
-require_once("views/login.php");
+p
 ?>
