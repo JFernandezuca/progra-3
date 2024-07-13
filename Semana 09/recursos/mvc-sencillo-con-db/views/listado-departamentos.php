@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=., initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Departamentos</h1>
-    <a href="index.php?modulo=mant_departamentos">Agregar departamento</a>
+    <a href="index.php?modulo=mantenimientoDepartamentos">Agregar departamento</a>
     <table border="1">
         <tr>
             <th>DEPARTMENT ID</th>Q
@@ -17,7 +18,7 @@
             <th>Opciones</th>        
         </tr>
         <?php
-        foreach($departmento->getLista() as $dep){
+        foreach($departmento->listarTodosDepartamentos() as $dep){
         ?>
         <tr>
             <td><?=$dep["DEPARTMENT_ID"]?></td>
@@ -25,7 +26,7 @@
             <td><?=$dep["LOCATION_ID"]?></td>
             <td><?=$dep["MANAGER_ID"]?></td>   
             <td>
-                <form method="POST" action ="index.php?modulo=mant_departamentos">
+                <form method="POST" action ="index.php?modulo=mantenimientoDepartamentos">
                     <input type="hidden" name="department_id" value="<?=$dep["DEPARTMENT_ID"]?>" />
                     <input type="submit" name="btn_editar" value="Editar" />
                 </form>
@@ -39,11 +40,9 @@
         <?php    
         }
         ?>
+        <?php 
+            echo '<p>'. $mensaje. '</p>';
+        ?>
     </table>
-    <?php
-    if($aviso){
-        echo $mensaje;
-    }
-    ?>
 </body>
 </html>

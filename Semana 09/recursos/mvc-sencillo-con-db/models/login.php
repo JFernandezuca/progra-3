@@ -1,78 +1,46 @@
 <?php
 
 require_once("conexion.php");
-class login{
+class usuario{
     private $sql;
     private $conn;
     private $bd;
     private $stmt;
-    private $usuario;
-    private $contrasena;
-    private $resul;
 
-    /**
-     * Get the value of usuario
-     */ 
-    public function getUsuario()
-    {
-        return $this->usuario;
-    }
+    // Propiedades publicas
+    public $usuario;
+    public $contrasena;
 
-    /**
-     * Set the value of usuario
-     *
-     * @return  self
-     */ 
-    public function setUsuario($usuario)
-    {
-        $this->usuario = $usuario;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of contrasena
-     */ 
-    public function getContrasena()
-    {
-        return $this->contrasena;
-    }
-
-    /**
-     * Set the value of contrasena
-     *
-     * @return  self
-     */ 
-    public function setContrasena($contrasena)
-    {
-        $this->contrasena = $contrasena;
-
-        return $this;
-    }
-
-    public function ingresar(){
+    public function login(){
         try {
+            // Crear conexión a la base de datos
             $this->bd = new conexion();
             $this->conn = $this->bd->crear_conexion();
-            $this->sql = "SELECT * FROM users WHERE NUM_IDENTIFICACION = :v1 AND DSC_PASSWORD = :v2";
+            
+            // Preparar la consulta SQL
+            $this->sql = "SELECT COUNT(*) FROM usuarios WHERE usuario = :v1 AND clave = :v2";
             $this->stmt = $this->conn->prepare($this->sql);
+            
+            // Asignar parámetros
             $this->stmt->bindParam(':v1', $this->usuario, PDO::PARAM_INT, 12);
             $this->stmt->bindParam(':v2', $this->contrasena, PDO::PARAM_STR, 150);
+            
+            // Ejecutar la consulta
             $this->stmt->execute();
-            $this->resul = $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+            // Obtener el resultado
+            $count = $this->stmt->fetchColumn();
+            
+            // Cerrar la conexión
             $this->bd->cerrar_conexion();
+            
+            // Retornar true si se encuentra al menos un usuario, de lo contrario false
+            return $count > 0;
         } catch (PDOException $e) {
+            // Manejar la excepción, opcionalmente registrar el error
+            $this->bd->cerrar_conexion();
             return false;
         }
-
-    }
-
-    /**
-     * Get the value of resul
-     */ 
-    public function getResul()
-    {
-        return $this->resul;
     }
 }
 ?>
