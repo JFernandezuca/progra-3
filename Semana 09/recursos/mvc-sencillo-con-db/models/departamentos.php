@@ -70,8 +70,9 @@ class departamentos{
             $this->stmt = $this->conn->prepare($this->sql);
             $this->stmt->bindParam(":department_id", $this->department_id, PDO::PARAM_INT, 4);
             $this->stmt->execute();
-            $this->lista = $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+            $resultado = $this->stmt->fetchAll(PDO::FETCH_ASSOC);
             $this->bd->cerrar_conexion();
+            return $resultado;
         } catch (PDOException $e) {
             return false;
         }

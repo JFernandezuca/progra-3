@@ -9,6 +9,7 @@
 <body>
     <h1>Departamentos</h1>
     <a href="index.php?modulo=mantenimientoDepartamentos">Agregar departamento</a>
+    <a href="index.php?modulo=logout">Salir</a>
     <table>
         <tr>
             <th>DEPARTMENT ID</th>

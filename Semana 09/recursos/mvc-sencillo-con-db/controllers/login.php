@@ -29,5 +29,11 @@ if(isset($_POST["btn_ingresar"])){
 
 }
 
+if(isset($_POST["btn_salir"]))
+{
+    session_destroy();
+}
+
+
 require_once("views/login.php");
 ?>
