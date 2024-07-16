@@ -9,11 +9,11 @@
 <body>
     <h1>Departamentos</h1>
     <a href="index.php?modulo=mantenimientoDepartamentos">Agregar departamento</a>
-    <table border="1">
+    <table>
         <tr>
-            <th>DEPARTMENT ID</th>Q
+            <th>DEPARTMENT ID</th>
             <th>DEPARTMENT NAME</th>       
-            <th>LOCATION ID</th>Q
+            <th>LOCATION ID</th>
             <th>MANAGER ID</th>          
             <th>Opciones</th>        
         </tr>
